@@ -1,0 +1,3 @@
+"".join()
+reversed() return an iterable
+list.pop() 同时 +

@@ -12,7 +12,7 @@ for i in range(4,7):
 print()
 for i in range(7):
   print(i)
-'''
+
 a = [21,12,12,3,4,5,3]
 for i in range(0,len(a)):
   print(-i-1)
@@ -23,3 +23,13 @@ print(len(str(123)))
 
 for i in range(2):
   print(i)
+'''
+
+a = 5
+b = 4
+a,b = b,a
+print(a)
+print(b)
+s ="hello"
+s[0] = 'o'
+print(s)

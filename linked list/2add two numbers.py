@@ -38,3 +38,41 @@ class Solution:
             head = head.next
         
         return res
+
+
+#用到了recursion join reversed 
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def recursion(self,la:ListNode,lb=[]) -> list:
+        lb.append(la.val)
+        if la.next == None:
+            return lb
+        else:
+            la = la.next
+            return self.recursion(la, lb)
+        
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        lst1 = self.recursion(l1,[])
+        lst2 = self.recursion(l2,[])
+        lst1 = reversed(lst1)
+        lst2 = reversed(lst2)
+        num1 = int("".join([str(i) for i in lst1]))
+        num2 = int("".join([str(i) for i in lst2]))
+        total = num1 + num2
+        
+        lst = list(reversed([i for i in str(total)]))
+        res =ListNode(lst[0])
+        res_ptr = res
+        for i in lst:
+            if i == lst[0]:
+                continue
+            new = ListNode(i)
+            res_ptr.next = new
+            res_ptr = res_ptr.next
+        return res

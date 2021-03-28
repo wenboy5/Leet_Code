@@ -1,3 +1,5 @@
 for if 后面用 ： 不用{}
 and or 不是 && ||
 用None 不用null
+python recursion 后面的[]一定要加上 for example: recursion(l1,[])
+用 not 不是！
