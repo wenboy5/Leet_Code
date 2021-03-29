@@ -1,3 +1,4 @@
 "".join()
 reversed() return an iterable
 list.pop() 同时 +
+if s is a str;   no need to convert to a list;   use s[0]
