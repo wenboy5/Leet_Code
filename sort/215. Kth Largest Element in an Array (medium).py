@@ -37,3 +37,60 @@ class Solution:
         nums = sorted(nums,reverse = True)
         return nums[k-1]
 
+class Solution:
+    def quickselect(self, left, right, nums, k):
+        if left == right:       # If the list contains only one element,
+          return nums[left]
+        pivot_index = random.randint(left, right)
+        pivot = nums[pivot_index]
+        # 1. move pivot to end
+        nums[pivot_index], nums[right] = nums[right], nums[pivot_index]
+        
+        store_index= left
+        for i in range(left, right):
+            if nums[i]< pivot:
+                nums[i],nums[store_index] = nums[store_index],nums[i]
+                store_index += 1
+        
+        nums[right],nums[store_index]=nums[store_index],nums[right]
+        
+        if store_index == k:
+            return nums[k]
+        elif store_index < k:
+            return self.quickselect(store_index+1,right,nums,k)
+        elif store_index > k:
+            return self.quickselect(left,store_index-1,nums,k)
+        
+        
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        return self.quickselect(0,len(nums)-1,nums,len(nums)-k)
+
+
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        def quickselect( left, right, nums, k):
+            if left == right:
+                return nums[left]
+            pivot_index = random.randint(left, right)
+
+            pivot = nums[pivot_index]
+
+            nums[pivot_index], nums[right] = nums[right], nums[pivot_index]
+
+            store_index= left
+            for i in range(left, right):
+                if nums[i]< pivot:
+                    nums[i],nums[store_index] = nums[store_index],nums[i]
+                    store_index += 1
+
+            nums[right],nums[store_index]=nums[store_index],nums[right]
+
+            if store_index == k:
+                return nums[k]
+            elif store_index < k:
+                return quickselect(store_index+1,right,nums,k)
+            elif store_index > k:
+                return quickselect(left,store_index-1,nums,k)
+
+        return quickselect(0,len(nums)-1,nums,len(nums)-k)
