@@ -1,11 +1,16 @@
 import random
 
 a = [21,12,12,3,4,5,3]
+print(a)
+print(len(a))
+a.pop(7)
+print(a)
+'''
 b = a[:2]
 print(b)
 print(sorted(a,reverse = True))
 print(random.randint(0, 1))
-
+'''
 '''
 a = [21,12,12,3,4,5,3]
 for i in range(4,7):
