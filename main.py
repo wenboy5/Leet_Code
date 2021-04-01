@@ -1,11 +1,25 @@
 import random
 
+
+class ListNode:
+    def __init__(self, x=0):
+        self.val = x
+        self.next = None
+
+ListNode.check = False
+a = ListNode()
+a.check = True
+print(a.check)
+b = ListNode()
+print(b.check)
+
+'''
 a = [21,12,12,3,4,5,3]
 print(a)
 print(len(a))
 a.pop(7)
 print(a)
-'''
+
 b = a[:2]
 print(b)
 print(sorted(a,reverse = True))
