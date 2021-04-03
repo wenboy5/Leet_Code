@@ -1,6 +1,16 @@
 import random
+a= ["abd","bsd","csa","baa"]
+print(min(a))
+print("abd"<"bsd")
+print("csa"<"baa")
+if not 0:
+  print("ok")
 
+index = "abc".find('d',0)
+print(index)
 
+print(index)
+'''
 class ListNode:
     def __init__(self, x=0):
         self.val = x
@@ -13,7 +23,7 @@ print(a.check)
 b = ListNode()
 print(b.check)
 
-'''
+
 a = [21,12,12,3,4,5,3]
 print(a)
 print(len(a))

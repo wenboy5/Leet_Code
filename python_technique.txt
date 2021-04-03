@@ -5,3 +5,5 @@ if s is a str;   no need to convert to a list;   use s[0]
 quicksort O(nlogn) quickselect average O(n) worst O(n**2)
 list.insert(pos,item) insert after that position
 in-place modification cannot use pop() insert()
+string.find(value, start, end) return the first position if not find return -1
+Python also allows us to use the else condition with for loops. The else block just after for/while is executed only when the loop is NOT terminated by a break statement. Such type of else is useful only if there is an if condition present inside the loop which somehow depends on the loop variable. 

@@ -3,3 +3,8 @@ and or 不是 && ||
 用None 不用null
 python recursion 后面的[]一定要加上 for example: recursion(l1,[])
 用 not 不是！
+
+for i in range(1, 4): 
+  print(i)
+else:  # Executed because no break in for
+    print("No Break")
