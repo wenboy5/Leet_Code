@@ -1,5 +1,8 @@
 import random
 a= ["abd","bsd","csa","baa"]
+
+print(a[1:])
+'''
 print(min(a))
 print("abd"<"bsd")
 print("csa"<"baa")
@@ -10,7 +13,7 @@ index = "abc".find('d',0)
 print(index)
 
 print(index)
-'''
+
 class ListNode:
     def __init__(self, x=0):
         self.val = x
