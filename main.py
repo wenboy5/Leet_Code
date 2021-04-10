@@ -1,8 +1,16 @@
 import random
+
+
+
+
+
+s = 'a'
+print(s*2)
+
+'''
 a= ["abd","bsd","csa","baa"]
 
 print(a[1:])
-'''
 print(min(a))
 print("abd"<"bsd")
 print("csa"<"baa")
