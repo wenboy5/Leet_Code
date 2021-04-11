@@ -1,12 +1,18 @@
 import random
 
+
+
+for x,y in [(1,3)]:
+  print(x,y)
+
+'''
 a= ["abd","bsd","csa","baa"]
 print(a.remove("csa"))
 print(a.remove("ssss"))
 print(a)
 
 
-'''
+
 s = 'a'
 print(s*2)
 
