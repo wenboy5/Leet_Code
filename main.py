@@ -1,13 +1,16 @@
 import random
 
+a= ["abd","bsd","csa","baa"]
+print(a.remove("csa"))
+print(a.remove("ssss"))
+print(a)
 
 
-
-
+'''
 s = 'a'
 print(s*2)
 
-'''
+
 a= ["abd","bsd","csa","baa"]
 
 print(a[1:])
