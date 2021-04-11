@@ -13,3 +13,6 @@ heapq.nlargest(k,iterable,key) key is a call back function
 Using no () means to fetch the function to be passed along as a callback.
 from collections import Counter  Counter returns a dic .most_common(k)
 list[n-k:] n-k is a whole
+list.remove()	Removes the first item with the specified value
+l = [0 for i in range(5)]
+l = [0] * 5
