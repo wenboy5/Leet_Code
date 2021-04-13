@@ -17,3 +17,4 @@ list.remove()	Removes the first item with the specified value
 l = [0 for i in range(5)]
 l = [0] * 5
 list.inert(pos,item) 把东西放到了pos位置上
+float('inf')
