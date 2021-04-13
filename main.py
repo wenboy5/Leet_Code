@@ -4,7 +4,7 @@ import random
 
 for x,y in [(1,3)]:
   print(x,y)
-
+print(type({0}))
 '''
 a= ["abd","bsd","csa","baa"]
 print(a.remove("csa"))
