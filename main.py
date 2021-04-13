@@ -1,7 +1,10 @@
 import random
 
-
-
+a= 1
+b=0
+c=0
+if (a and b and c) == 0:
+  print("yes")
 for x,y in [(1,3)]:
   print(x,y)
 print(type({0}))
