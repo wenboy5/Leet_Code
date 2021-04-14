@@ -19,3 +19,4 @@ l = [0] * 5
 list.inert(pos,item) 把东西放到了pos位置上
 float('inf')
 set.add()
+list.count(element)

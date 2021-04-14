@@ -1,15 +1,19 @@
 import random
 
-a= 1
-b=0
-c=0
-if (a and b and c) == 0:
-  print("yes")
-for x,y in [(1,3)]:
-  print(x,y)
-print(type({0}))
-'''
+# a= 1
+# b=0
+# c=0
+# if (a and b and c) == 0:
+#   print("yes")
+# for x,y in [(1,3)]:
+#   print(x,y)
+# print(type({0}))
+
 a= ["abd","bsd","csa","baa"]
+print(a.index("abd"))
+print(len("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxt"))
+print(len("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtxxxxxxxxxxxxxxxxxxxxw"))
+'''
 print(a.remove("csa"))
 print(a.remove("ssss"))
 print(a)
