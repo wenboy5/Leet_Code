@@ -17,3 +17,21 @@ Output: false
 Explanation: You can't get a non-decreasing array by modify at most one element.
 '''
 
+class Solution:
+    def checkPossibility(self, nums: List[int]) -> bool:
+        flag = 0
+        for i in range(len(nums)-1):
+            if nums[i] > nums[i+1]:
+                flag += 1
+                if flag == 2:
+                    return False
+                
+                if i == 0:
+                    nums[i] = nums[i+1]
+                else:
+                    if nums[i-1] > nums[i+1]:
+                        nums[i+1] = nums[i]
+                    else:
+                        nums[i] = nums[i-1]
+            
+        return True
