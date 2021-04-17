@@ -8,6 +8,7 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+print('a' > '`')
 
 a= ["abd","bsd","csa","baa"]
 print(a.index("abd"))
