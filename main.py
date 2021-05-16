@@ -8,13 +8,16 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+for i in range(4):
+  print(i)
+'''
 print('a' > '`')
 
 a= ["abd","bsd","csa","baa"]
 print(a.index("abd"))
 print(len("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxt"))
 print(len("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtxxxxxxxxxxxxxxxxxxxxw"))
-'''
+
 print(a.remove("csa"))
 print(a.remove("ssss"))
 print(a)

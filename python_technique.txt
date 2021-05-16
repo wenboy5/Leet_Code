@@ -23,3 +23,4 @@ set.add()
 list.count(element)
 reverse a string  txt = "Hello World"[::-1] 
 ascii `= 96 a=97 z=122
+list.index(value,start)
