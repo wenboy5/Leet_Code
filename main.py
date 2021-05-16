@@ -11,6 +11,8 @@ import random
 s= "-123"
 print(int(s))
 print(-2**31)
+num = 4321
+print( (num //100) %10 )
 '''
 print('a' > '`')
 
