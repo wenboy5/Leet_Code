@@ -8,14 +8,9 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
-for i in range(4-1):
-  print(i)
-
-
-A ={'a', 'b', 'c', 'd'}
-
-print('Return Value is', A.pop())
-print('A = ', A)
+s= "-123"
+print(int(s))
+print(-2**31)
 '''
 print('a' > '`')
 
