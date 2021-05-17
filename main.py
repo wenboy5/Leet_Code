@@ -9,7 +9,10 @@ import random
 #   print(x,y)
 # print(type({0}))
 s= "-123"
-print(s[0:5])
+print(s[0:3])
+a = set()
+a.add((1,2,3))
+print(list(a))
 '''
 print(int(s))
 print(-2**31)
