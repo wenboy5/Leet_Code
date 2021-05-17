@@ -61,3 +61,20 @@ class Solution:
                 start +=1
         return res
                     
+
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        romans_to_int = {"M":1000,"CM":900,"D":500,"CD":400,"C":100,"XC":90,"L":50,"XL":40,"X":10,"IX":9,"V":5,"IV":4,"I":1 }
+        start  = 0
+        end = len(s)-1
+        
+        res = 0
+        while(start<=end):
+            if s[start:start+2] in romans_to_int:
+                res += romans_to_int[s[start:start+2]]
+                start+=2
+            else:
+                res += romans_to_int[s[start]]
+                start +=1
+        return res
+                    
