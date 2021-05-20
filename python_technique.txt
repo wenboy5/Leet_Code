@@ -25,3 +25,10 @@ reverse a string  txt = "Hello World"[::-1]
 ascii `= 96 a=97 z=122
 list.index(value,start)
 s= "123" s[0:10] is still "123"
+
+>>> # Sort the list and assign to new variable
+>>> sorted_values = values_to_sort.sort()
+>>> print(sorted_values)
+None
+
+values = a_dict.values()

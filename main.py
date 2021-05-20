@@ -8,12 +8,17 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
-s= "-123"
+s= "cbd"
+b = sorted(list(s))
+print(tuple(list(s)))
+print(b)
+print(['a','b'] == ['b','a'])
+'''
 print(s[0:3])
 a = set()
 a.add((1,2,3))
 print(list(a))
-'''
+
 print(int(s))
 print(-2**31)
 num = 4321
