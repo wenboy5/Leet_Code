@@ -47,3 +47,6 @@ animals.remove('fish')
 
 "1.4.23.4".split(".")
 .strip("0") .rstrip() .lstrip()
+
+list insert
+list.insert(pos,value)
