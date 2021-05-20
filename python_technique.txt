@@ -32,3 +32,15 @@ s= "123" s[0:10] is still "123"
 None
 
 values = a_dict.values()
+
+python set remove
+# language set
+language = {'English', 'French', 'German'}
+# removing 'German' from language
+language.remove('German')
+
+python list remove
+# animals list
+animals = ['cat', 'dog', 'rabbit', 'guinea pig']
+# Deleting 'fish' element
+animals.remove('fish')

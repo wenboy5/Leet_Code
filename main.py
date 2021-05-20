@@ -13,6 +13,10 @@ b = sorted(list(s))
 print(tuple(list(s)))
 print(b)
 print(['a','b'] == ['b','a'])
+c = set()
+if 'a' not in c:
+  c.add('a')
+print(c)
 '''
 print(s[0:3])
 a = set()
