@@ -17,6 +17,8 @@ c = set()
 if 'a' not in c:
   c.add('a')
 print(c)
+
+print("0".lstrip("0") != "")
 '''
 print(s[0:3])
 a = set()

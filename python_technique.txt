@@ -44,3 +44,6 @@ python list remove
 animals = ['cat', 'dog', 'rabbit', 'guinea pig']
 # Deleting 'fish' element
 animals.remove('fish')
+
+"1.4.23.4".split(".")
+.strip("0") .rstrip() .lstrip()
