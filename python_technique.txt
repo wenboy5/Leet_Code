@@ -53,3 +53,8 @@ list.insert(pos,value)
 
 python pop
 a = pop(-1)
+
+Counter('abracadabra').most_common(3)
+[('a', 5), ('b', 2), ('r', 2)]
+
+re.split(r"\W",stringg)
