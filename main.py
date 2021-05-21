@@ -8,6 +8,8 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+if None:
+  print("1")
 print(10//3)
 print(10%3)
 s= "cbd"

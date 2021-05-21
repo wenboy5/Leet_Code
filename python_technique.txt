@@ -50,3 +50,6 @@ animals.remove('fish')
 
 list insert
 list.insert(pos,value)
+
+python pop
+a = pop(-1)
