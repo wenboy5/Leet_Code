@@ -8,6 +8,11 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+print(['a'] + ["b"])
+print("a" < "asbdf")
+print("a" < "b")
+if int("s"):
+  print("ok")
 if None:
   print("1")
 print(10//3)
