@@ -8,6 +8,8 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+print(10//3)
+print(10%3)
 s= "cbd"
 b = sorted(list(s))
 print(tuple(list(s)))
