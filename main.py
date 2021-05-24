@@ -10,6 +10,7 @@ import random
 # print(type({0}))
 for i in [0,1,2][:-1:-1]:
   print(i)
+print(int(3/2))
 '''
 print(['a'] + ["b"])
 print("a" < "asbdf")
