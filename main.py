@@ -8,6 +8,9 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+for i in [0,1,2][:-1:-1]:
+  print(i)
+'''
 print(['a'] + ["b"])
 print("a" < "asbdf")
 print("a" < "b")
@@ -28,7 +31,7 @@ if 'a' not in c:
 print(c)
 
 print("0".lstrip("0") != "")
-'''
+
 print(s[0:3])
 a = set()
 a.add((1,2,3))
