@@ -3,6 +3,40 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        n1 = [str(l1.val)]
+        n2 = [str(l2.val)]
+        
+        while l1.next != None:
+            l1 = l1.next
+            n1.append(str(l1.val))
+        while l2.next!= None:
+            l2 = l2.next
+            n2.append(str(l2.val))
+            
+        print(n1)
+        print(n2)
+        res = []
+        total = int("".join(n1[::-1])) + int("".join(n2[::-1]))
+        total = str(total)
+        for i in reversed(range(len(total))):
+            res.append(int(total[i]))
+        head = ListNode(res[0])
+        ans = head 
+        for i in res[1:]:
+            temp = ListNode(i)
+            head.next= temp
+            head = head.next
+        return ans
+            
+            
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         lst1 = []
