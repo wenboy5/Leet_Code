@@ -58,8 +58,7 @@ class Solution:
                     for i in temp[::-1]:
                         res.next = i
                         res = res.next
-                temp = []
-                
+                temp = []         
                 
         if temp != []:
             for i in temp:
