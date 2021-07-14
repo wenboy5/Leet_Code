@@ -1,5 +1,5 @@
 import random
-
+import math
 # a= 1
 # b=0
 # c=0
@@ -8,10 +8,12 @@ import random
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
+print(int(math.sqrt(12)))
+'''
 for i in [0,1,2][:-1:-1]:
   print(i)
 print(int(3/2))
-'''
+
 print(['a'] + ["b"])
 print("a" < "asbdf")
 print("a" < "b")
