@@ -10,3 +10,6 @@ else:  # Executed because no break in for
     print("No Break")
 
 separate or / and  i == 0 or i == 1
+
+a = set()
+b = a.copy()

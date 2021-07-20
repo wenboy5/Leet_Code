@@ -1,5 +1,16 @@
 import random
 import math
+a = 1 
+b =a 
+print(b)
+a= 5
+print(b)
+c = set()
+c.add(1)
+d = c
+print(d)
+c.add(2)
+print(d)
 # a= 1
 # b=0
 # c=0
@@ -8,8 +19,9 @@ import math
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
-print(int(math.sqrt(12)))
 '''
+print(int(math.sqrt(12)))
+
 for i in [0,1,2][:-1:-1]:
   print(i)
 print(int(3/2))
