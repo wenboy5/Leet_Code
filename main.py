@@ -1,5 +1,13 @@
 import random
 import math
+def count(num):
+  if num == 10:
+    return True
+if count(5):
+  print("hahahah")
+print("----")
+if count(10):
+  print("woc")
 a = 1 
 b =a 
 print(b)
