@@ -11,6 +11,9 @@ d = c
 print(d)
 c.add(2)
 print(d)
+
+s = "dsfsf"
+print(s[0:2])
 # a= 1
 # b=0
 # c=0
