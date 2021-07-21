@@ -1,5 +1,15 @@
 import random
 import math
+
+a = set()
+
+b = set()
+b.add(2)
+print(a)
+
+a.update(b)
+print(a)
+'''
 def count(num):
   if num == 10:
     return True
@@ -30,7 +40,7 @@ print(s[0:2])
 # for x,y in [(1,3)]:
 #   print(x,y)
 # print(type({0}))
-'''
+
 print(int(math.sqrt(12)))
 
 for i in [0,1,2][:-1:-1]:
