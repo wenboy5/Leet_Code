@@ -38,7 +38,6 @@ class Solution:
                     dfs(i,q+1,n+1,l+[nums[q]])
         for q in range(N+1):
             dfs(q,0,0,[])
-        # dfs(2,0,0,[])
-        # print(ans)
+
         return ans
         
