@@ -1,6 +1,11 @@
 import random
 import math
 
+print(5//3)
+a = {1,2,3}
+b = {1}
+print(a-b)
+'''
 a = set()
 
 b = set()
@@ -9,7 +14,7 @@ print(a)
 
 a.update(b)
 print(a)
-'''
+
 def count(num):
   if num == 10:
     return True
