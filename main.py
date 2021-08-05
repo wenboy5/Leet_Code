@@ -1,5 +1,6 @@
 import random
 import math
+print((['1', '2']))
 
 print(5//3)
 a = {1,2,3}
