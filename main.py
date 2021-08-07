@@ -1,7 +1,10 @@
 import random
 import math
 print((['1', '2']))
-
+print()
+for i in range(2,2):
+  print(i,"haha")
+print()
 print(5//3)
 a = {1,2,3}
 b = {1}
