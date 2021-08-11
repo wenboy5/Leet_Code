@@ -1,5 +1,8 @@
 import random
 import math
+
+for i in range(8,-199,-1):
+  print(i)
 print((['1', '2']))
 print()
 for i in range(2,2):
