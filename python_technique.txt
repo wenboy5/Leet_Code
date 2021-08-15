@@ -64,3 +64,5 @@ sort     can depend on the item on a list
 linklist question alwasy consider whether head == None
 set can do add and minus
 set.update() adding items from other iterables.
+Don't use [[v]*n]*n, it is a trap!
+BUT use  t = [ [0]*3 for i in range(3)]
