@@ -1,7 +1,7 @@
 import random
 import math
 
-for i in range(8,-199,-1):
+for i in range(8,-19,-1):
   print(i)
 print((['1', '2']))
 print()
