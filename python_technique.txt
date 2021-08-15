@@ -66,3 +66,6 @@ set can do add and minus
 set.update() adding items from other iterables.
 Don't use [[v]*n]*n, it is a trap!
 BUT use  t = [ [0]*3 for i in range(3)]
+@lru_cache(maxsize=None)
+因为 dp[j-w] 表示 dp[i-1][j-w]，因此不能先求 dp[i][j-w]，防止将 dp[i-1][j-w] 覆盖。也就是说要先计算 dp[i][j] 再计算 dp[i][j-w]，在程序实现时需要按倒序来循环求解。
+因为倒序不会重复拿一样东西  正序说明可以重复拿一样东西

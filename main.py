@@ -1,6 +1,12 @@
 import random
 import math
 
+l = [1,2,3,4,1]
+l.remove(1)
+print(l)
+l.remove(1)
+print(l)
+'''
 for i in range(8,-19,-1):
   print(i)
 print((['1', '2']))
@@ -12,7 +18,7 @@ print(5//3)
 a = {1,2,3}
 b = {1}
 print(a-b)
-'''
+
 a = set()
 
 b = set()
