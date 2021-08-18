@@ -1,12 +1,22 @@
 import random
 import math
+from collections import Counter
 
 l = [1,2,3,4,1]
-l.remove(1)
-print(l)
-l.remove(1)
-print(l)
+d = Counter(l)
+for i in d:
+  print(i,d[i])
+
+print(1==1) # True
+print(True + True) #2
+print(True + False) #1
+
 '''
+l.remove(1)
+print(l)
+l.remove(1)
+print(l)
+
 for i in range(8,-19,-1):
   print(i)
 print((['1', '2']))
