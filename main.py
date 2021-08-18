@@ -1,8 +1,15 @@
 import random
 import math
 from collections import Counter
+import bisect
 
-l = [1,2,3,4,1]
+
+l = [1,2,3,5,1]
+l.sort(reverse=True)
+print(l)
+index = bisect.bisect_left(l,4)
+print(index)
+'''
 d = Counter(l)
 for i in d:
   print(i,d[i])
@@ -11,7 +18,6 @@ print(1==1) # True
 print(True + True) #2
 print(True + False) #1
 
-'''
 l.remove(1)
 print(l)
 l.remove(1)
