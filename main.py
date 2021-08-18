@@ -3,6 +3,11 @@ import math
 from collections import Counter
 import bisect
 
+for i in range(4):
+  if i == 2:
+    print("yes")
+    continue
+  print(i, "hi")
 
 l = [1,2,3,5,1]
 l.sort(reverse=True)
