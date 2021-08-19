@@ -10,6 +10,7 @@ for i in range(4):
   print(i, "hi")
 
 l = [1,2,3,5,1]
+print("max",max(l[:3]))
 l.sort(reverse=True)
 print(l)
 index = bisect.bisect_left(l,4)
