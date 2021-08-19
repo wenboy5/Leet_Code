@@ -3,6 +3,12 @@ import math
 from collections import Counter
 import bisect
 
+a = Counter()
+a[1] += 1
+a[3] += 1
+print(a)
+print(sum(a))
+'''
 for i in range(4):
   if i == 2:
     print("yes")
@@ -15,7 +21,7 @@ l.sort(reverse=True)
 print(l)
 index = bisect.bisect_left(l,4)
 print(index)
-'''
+
 d = Counter(l)
 for i in d:
   print(i,d[i])
