@@ -3,12 +3,15 @@ import math
 from collections import Counter
 import bisect
 
+a = {1=1, 2=2}
+print(a)
+'''
 a = Counter()
 a[1] += 1
 a[3] += 1
 print(a)
 print(sum(a))
-'''
+
 for i in range(4):
   if i == 2:
     print("yes")
