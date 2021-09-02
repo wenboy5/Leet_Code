@@ -19,6 +19,20 @@ Output: "ffffffff"
 
 class Solution:
     def toHex(self, num: int) -> str:
+        if num == 0:
+            return "0"
+        elif num < 0:
+            num += 2 ** 32
+            
+        res = ""
+        letter = "0123456789abcdef"
+        while num > 0:
+            res = letter[num % 16] + res
+            num //= 16
+        return res
+
+class Solution:
+    def toHex(self, num: int) -> str:
         num_to_hex = {10:"a",
                       11:"b",
                       12:"c",
