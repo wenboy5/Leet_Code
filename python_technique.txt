@@ -80,3 +80,11 @@ continue 是不执行后面的code break是打断当前的for loop
 integers = [1, 16, 3, 39, 26, 4, 8, 16]
 # get 2 largest values
 largest_integers = heapq.nlargest(2, integers)  # [39, 26]
+
+max(counts.keys(), key=counts.get)
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = car.get("model")
