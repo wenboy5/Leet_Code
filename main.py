@@ -6,7 +6,9 @@
 # print(a[1:-1])
 # print(comb(3,3))
 '''
-print(5//3)
+print(701//26)
+print(701%26)
+
 new_res = ["0" for _ in range(8)]
 print(new_res)
 l = [1]
