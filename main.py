@@ -25,3 +25,6 @@ print(index)
 print()
 print(bisect.bisect_left([0, 0, 1, 6, 8],1))
 print(bisect.bisect_right([0, 0, 1, 6, 8],1))
+print()
+for i in reversed(range(1,5)):
+  print(i)
