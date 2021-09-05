@@ -19,3 +19,5 @@ Syntax :
 map(fun, iter)
 
 recursion的时候不要改变变量名称
+
+recursion 除非要return 变量全部设置成local 不要用global的T/F
