@@ -1,4 +1,4 @@
-for if 后面用 ： 不用{}
+afor if 后面用 ： 不用{}
 and or 不是 && ||
 用None 不用null
 python recursion 后面的[]一定要加上 for example: recursion(l1,[])
@@ -17,3 +17,5 @@ b = a.copy()
 map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
 Syntax :
 map(fun, iter)
+
+recursion的时候不要改变变量名称
