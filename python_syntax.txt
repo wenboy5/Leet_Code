@@ -36,3 +36,11 @@ Algorithm Postorder(tree)
    1. Traverse the left subtree, i.e., call Postorder(left-subtree)
    2. Traverse the right subtree, i.e., call Postorder(right-subtree)
    3. Visit the root.
+
+check identical of two trees
+def check(left,right):
+        if not left and not right:
+            return True
+        if left and right:
+            return left.val == right.val and check(left.left,right.left) and check(left.right, right.right)
+        return False
