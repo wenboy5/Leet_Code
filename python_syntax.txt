@@ -22,6 +22,8 @@ recursion的时候不要改变变量名称
 
 recursion 除非要return 变量全部设置成local 不要用global的T/F
 
+tree recursion 的base case要找好 一般是 none的时候！！
+
 Algorithm Preorder(tree)
    1. Visit the root.
    2. Traverse the left subtree, i.e., call Preorder(left-subtree)

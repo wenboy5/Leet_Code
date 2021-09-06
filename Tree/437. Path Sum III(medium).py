@@ -34,6 +34,7 @@ class Solution:
         if root == None:
             return 0
         ans = 0
+        
         def dfs(root, total,l):
             nonlocal ans
             if total == targetSum:
@@ -43,6 +44,7 @@ class Solution:
                     dfs(root.left,root.left.val+total,l+[root.left.val])
                 if root.right:
                     dfs(root.right,root.right.val+total,l+[root.right.val])
+
         stack = [root]
         while stack:
             i = stack.pop()
