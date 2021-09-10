@@ -1,13 +1,23 @@
+s = []
+if s:
+  print(1)
+
+if not s:
+  print(2)
+
+a = [1,2,3,4,5,6,7,8]
+print(a[:-2])
+'''
 import bisect
 
-'''
+
 # from scipy.special import perm, comb
 # from itertools import combinations,permutations
 # a = [0,1,2,3,4,5]
 # print("naozi")
 # print(a[1:-1])
 # print(comb(3,3))
-'''
+
 print(701//26)
 print(701%26)
 
@@ -28,3 +38,5 @@ print(bisect.bisect_right([0, 0, 1, 6, 8],1))
 print()
 for i in reversed(range(1,5)):
   print(i)
+
+'''

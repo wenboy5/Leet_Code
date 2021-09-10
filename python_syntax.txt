@@ -44,3 +44,6 @@ def check(left,right):
         if left and right:
             return left.val == right.val and check(left.left,right.left) and check(left.right, right.right)
         return False
+
+@lru_cache(None)
+With the @lru_cache decorator in place, you store every call and answer in memory to access later if requested again
