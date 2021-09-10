@@ -37,6 +37,28 @@ Algorithm Postorder(tree)
    2. Traverse the right subtree, i.e., call Postorder(right-subtree)
    3. Visit the root.
 
+① 前序
+
+void dfs(TreeNode root) {
+    visit(root);
+    dfs(root.left);
+    dfs(root.right);
+}
+② 中序
+
+void dfs(TreeNode root) {
+    dfs(root.left);
+    visit(root);
+    dfs(root.right);
+}
+③ 后序
+
+void dfs(TreeNode root) {
+    dfs(root.left);
+    dfs(root.right);
+    visit(root);
+}
+
 check identical of two trees
 def check(left,right):
         if not left and not right:

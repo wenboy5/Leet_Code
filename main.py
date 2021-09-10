@@ -1,3 +1,6 @@
+print(2/3)
+
+'''
 s = []
 if s:
   print(1)
@@ -7,7 +10,7 @@ if not s:
 
 a = [1,2,3,4,5,6,7,8]
 print(a[:-2])
-'''
+
 import bisect
 
 
