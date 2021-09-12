@@ -102,3 +102,34 @@ class Solution:
                     return p_l[i-1]
             return p_l[n-1]
                 
+
+class Solution:
+    def lowestCommonAncestor(self, root, p, q):
+        def dfs(root,val):
+            if root:
+                if root.val == val:
+                    return [root]
+                else:
+                    a = dfs(root.left,val)
+                    b = dfs(root.right,val)
+                    if a:
+                        return [root] + a
+                    elif b:
+                        return [root] + b
+                    else:
+                        return []
+            else:
+                return []
+            
+        p_l = dfs(root,p.val)
+        q_l = dfs(root,q.val)
+
+        n = min(len(q_l),len(p_l))
+
+        if n == 1:
+            return q_l[0]
+        else:
+            for i in range(n):
+                if p_l[i].val != q_l[i].val:
+                    return p_l[i-1]
+            return p_l[n-1]
