@@ -69,3 +69,9 @@ def check(left,right):
 
 @lru_cache(None)
 With the @lru_cache decorator in place, you store every call and answer in memory to access later if requested again
+
+value = d.get(key,val)
+if key does not exist value = val else get existed d[key]
+
+value = d.get(key)
+if key does not exist value = None else get existed d[key]
