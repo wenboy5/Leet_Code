@@ -75,3 +75,5 @@ if key does not exist value = val else get existed d[key]
 
 value = d.get(key)
 if key does not exist value = None else get existed d[key]
+
+copy python list use l.copy cannot use l = a 
