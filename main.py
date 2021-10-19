@@ -1,8 +1,57 @@
+Capitals = [0,1,2]
+Profits = [1,2,3]
+d = dict()
+for i,j in zip(Capitals,Profits):
+    if i in d:
+        d[i] = max(d[i],j)
+    else:
+        d[i] = j
+        
+# print(d)
+ans = 0
+def find_profit(c, n):
+    nonlocal ans
+    
+    if n == 0:
+        ans = max(ans,c)
+    else:
+        for k in d.keys():
+            if k <= c and d[k] > 0:
+                v = d[k]
+                d[k] = 0
+                find_profit(c+v,n-1)
+                d[k] = v
+find_profit(1,2)
+print(ans)
+# def find_profit(c, n):
+#     if n == 0:
+#         return c
+#     else:
+#         ans = c
+#         for k in d.keys():
+#             if k <= c and d[k] > 0:
+#                 v = d[k]
+#                 d[k] = 0
+#                 localmax = find_profit(c+v,n-1)
+#                 if localmax > ans:
+#                     ans = localmax
+#                 d[k] = v
+#         return ans
+
+'''
+l = [1,2,3,4,5]
+a = [1,2]
+print(all(i in l for i in a))
+
+
+a = None
+a = 1
+print(a)
 print(2/3)
 if []:
   print("1")
 
-'''
+
 s = []
 if s:
   print(1)
