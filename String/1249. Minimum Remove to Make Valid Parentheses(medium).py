@@ -46,3 +46,20 @@ class Solution:
             if i not in remove:
                 ans.append(e)
         return "".join(ans)
+
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        
+        s = list(s) # s只有转化为list才能遍历 
+        stack = []
+        for index, char in enumerate(s):
+            if char == '(':
+                stack.append(index)
+            elif char == ')':
+                if stack:
+                    stack.pop()
+                else:
+                    s[index] = ''
+        for i in stack:
+            s[i] = ''
+        return ''.join(s)
