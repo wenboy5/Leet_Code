@@ -40,6 +40,8 @@ Algorithm Postorder(tree)
 ① 前序
 
 void dfs(TreeNode root) {
+    if root is None:
+      return
     visit(root);
     dfs(root.left);
     dfs(root.right);
@@ -47,6 +49,8 @@ void dfs(TreeNode root) {
 ② 中序
 
 void dfs(TreeNode root) {
+    if root is None:
+      return
     dfs(root.left);
     visit(root);
     dfs(root.right);
@@ -54,6 +58,8 @@ void dfs(TreeNode root) {
 ③ 后序
 
 void dfs(TreeNode root) {
+    if root is None:
+      return
     dfs(root.left);
     dfs(root.right);
     visit(root);
