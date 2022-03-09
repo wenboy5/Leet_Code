@@ -12,6 +12,19 @@ Note:
 The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
 '''
 
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+        l = 0 #initializing the left pointer to the beginning of the string
+        r = len(s) - 1 #initializing the right pointer to the end of the string 
+        
+        while l <= r:
+            if s[l] == s[r]: #if the string at both pointers is the same, move one step towards the center of the string
+                l += 1
+                r -= 1
+            else: #incase the strings at each of the pointers aren't equal, ignore either of the characters and check if it is a palindrome
+                return s[l:r][::-1] == s[l:r] or s[l + 1: r + 1][::-1] == s[l + 1:r + 1] 
+        return True #the input string is a palindrome so we return True
+
 
 def reverse_check(lo, hi, s, chance):
     if lo < hi:
